@@ -4,7 +4,7 @@ namespace BeyondCode\VisualDiff;
 
 use Laravel\Dusk\Browser;
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Foundation\Testing\TestResponse;
+use Illuminate\Testing\TestResponse;
 
 class VisualDiffServiceProvider extends ServiceProvider
 {
@@ -36,7 +36,7 @@ class VisualDiffServiceProvider extends ServiceProvider
 
             $testResolutions = config('visualdiff.resolutions');
 
-            if (! is_null($resolutions)) {
+            if (!is_null($resolutions)) {
                 $testResolutions = $resolutions;
             }
 
@@ -69,7 +69,7 @@ class VisualDiffServiceProvider extends ServiceProvider
 
                 $testResolutions = config('visualdiff.resolutions');
 
-                if (! is_null($resolutions)) {
+                if (!is_null($resolutions)) {
                     $testResolutions = $resolutions;
                 }
 
